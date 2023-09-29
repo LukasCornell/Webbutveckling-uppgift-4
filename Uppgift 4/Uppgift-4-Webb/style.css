@@ -1,0 +1,85 @@
+.parent{
+
+    background-color: rgb(141, 141, 141);
+    width: 500px;
+    height: 500px;
+}
+
+.child{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    transition: 1s;
+    
+}
+
+
+.parent .child{
+    animation: animation1 1s ease-in forwards infinite;
+}
+
+@keyframes animation1{
+    0%{
+        transform: translateX(0);
+        background-color: blue;
+    }
+    25%{
+        transform: translateY(100%) translateX(50%);
+        background-color: red;
+    }
+    50%{
+        transform: translateY(100%) translateX(50%);
+        background-color: yellow;
+    }
+
+    75%{
+        transform: translateX(100%) translateY(50%);
+        background-color: green;
+    }
+
+    100%{
+        transform: translateX(0) translateY(0);
+
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+
+    background: rgb(211, 94, 94);
+}
+
+img {
+    display: block;
+    max-width: 70%;
+    border-radius: 10px;
+ }
+ 
+ .primary-navigation {
+    color: rgb(110, 42, 42);
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+ }
+ 
+ .primary-navigation:hover {
+    color: aqua;
+ }
+ .primary-navigation:active {
+    color: rgb(255, 0, 255);
+ }
+
+ .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    margin-inline: none;
+ } 
+
+ .what :hover{
+    transform: translateX(50%);
+    
+ }
